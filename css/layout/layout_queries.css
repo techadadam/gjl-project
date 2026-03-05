@@ -1,0 +1,196 @@
+/*grids.css*/
+
+/* RESPONSIVE */
+/* Ponizej 1200px (Szerokok. tablety) */
+@media (max-width: 75em) {
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .godziny-otwarcia-grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+}
+
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-text-photo-1st-cell {
+    grid-column: auto;
+  }
+
+  .grid-text-photo-2nd-cell {
+    grid-column: auto;
+  }
+
+  .grid-photo-text-1st-cell {
+    grid-column: auto;
+  }
+
+  .grid-photo-text-2nd-cell {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .grid-text-photo {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-photo-text {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Poniżej 704px (Male tablety) */
+@media (max-width: 44em) {
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ponizej 544px (telefon) */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*header.css*/
+
+/* ----- RESPONSIVE ----- */
+
+/* Powyzej 1200px */
+@media (min-width: 75em) {
+  body.sticky .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Ponizej 1200px (Szerokok. tablety) */
+
+@media (max-width: 75em) {
+  .main-nav-list {
+    gap: 5.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+/* ponizej 944px */
+@media (max-width: 59em) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  body:not(.sticky) .logo-container {
+    /*padding-left: 8rem; /*3.2+4.8*/
+    justify-content: left;
+  }
+
+  .body.sticky .main-nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-open .main-nav {
+    z-index: 3;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* Ponizej 544px (telefon) */
+@media (max-width: 34em) {
+  .logo {
+    max-height: 7.2rem;
+    padding: 1rem;
+  }
+
+  .brand-connector {
+    height: 1.8rem;
+  }
+  .logo-erkado {
+    max-height: 3.8rem;
+  }
+}
+
+/*sections.css*/
+/* RESPONSIVE */
+
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .section-o-nas {
+    grid-template-columns: 1fr;
+  }
+}

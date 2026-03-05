@@ -1,0 +1,81 @@
+/* sekcja stopka foot */
+
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid var(--color-accent1);
+  background-color: var(--color-base-light);
+}
+
+.grid--footer {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.social-media-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.social-media-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--color-accent2);
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-accent2);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--color-accent2);
+}
+
+.underfooter-copyright {
+  font-size: 1.2rem;
+  border-top: 1px solid var(--color-accent1);
+}

@@ -1,0 +1,31 @@
+/* Reveal базowy */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.reveal--active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* warianty kierunku (opcjonalnie) */
+.reveal--left {
+  transform: translateX(-24px);
+}
+.reveal--right {
+  transform: translateX(24px);
+}
+.reveal--zoom {
+  transform: scale(0.98);
+}
+
+.reveal--left.reveal--active,
+.reveal--right.reveal--active,
+.reveal--zoom.reveal--active {
+  transform: none;
+}

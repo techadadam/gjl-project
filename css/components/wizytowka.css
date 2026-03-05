@@ -1,0 +1,57 @@
+.wizytowka-button {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  font-family: inherit;
+  /*aspect-ratio: 16 / 9;*/
+  border-radius: 9px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--color-accent1);
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  padding: 1.8rem;
+}
+
+.wizytowka-button:hover {
+  transform: scale(1.05);
+  background-color: var(--color-accent1);
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  transition: background-color 0.5s ease;
+}
+
+.wizytowka-button-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2.4rem;
+}
+
+.img-profile-photo {
+  width: 90%;
+  height: auto;
+  min-width: 125px;
+  padding: 1.2rem;
+  overflow: hidden;
+  justify-self: center;
+  object-fit: cover;
+  overflow: scroll;
+  filter: brightness(0.8); /* przyciemnienie */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.wizytowka-text {
+  font-size: 2.2rem;
+  color: var(--color-base-dark);
+  padding: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.wizytowka-text p:not(:first-child) {
+  font-size: 1.8rem;
+}

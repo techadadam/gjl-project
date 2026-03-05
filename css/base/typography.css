@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-main);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-base-dark);
+}
+
+.hero-title,
+.hero-subtitle,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: rgb(from var(--color-base-light) r g b / 0.75);
+  letter-spacing: -0.5px;
+}
+
+.hero-title {
+  font-size: 5.4rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.hero-subtitle {
+  color: rgb(from var(--color-base-light) r g b / 0.75);
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 9.6rem;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.8rem, 4vw, 5.4rem);
+}
+
+.hero-text h3 {
+  margin-top: 1rem;
+  font-size: clamp(2.4rem, 4vw, 4.8rem);
+}
+
+.heading-secondary {
+  color: var(--color-accent2);
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 7.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-accent2);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-dark {
+  color: var(--color-base-dark);
+}
+
+.text-light {
+  color: var(--color-base-light);
+}

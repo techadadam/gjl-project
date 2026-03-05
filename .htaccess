@@ -1,0 +1,110 @@
+###############################################################################
+# kaminscypodlogi.pl — .htaccess (Czysty HTML/CSS/JS)
+# Apache / Cyber_Folks / DirectAdmin
+# Kanoniczna domena: https://kaminscypodlogi.pl  (WWW -> BEZ WWW)
+# Cache: obrazy + CSS + JS = 7 dni
+###############################################################################
+
+Options -Indexes
+
+# Blokada plików ukrytych (pozwalamy tylko na .well-known dla SSL)
+<FilesMatch "(^|/)\.(?!well-known)">
+  Require all denied
+</FilesMatch>
+
+RewriteEngine On
+
+# ---------------------------------------------------------------------------
+# 1) Kanoniczna domena + HTTPS (HTTP -> HTTPS) + (WWW -> BEZ WWW)
+#    Jedna reguła, bez pętli i bez zbędnych skoków
+# ---------------------------------------------------------------------------
+
+# Jeśli nie HTTPS LUB host zaczyna się od www. → przekieruj na https://bez-www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.kaminscypodlogi\.pl$ [NC]
+RewriteRule ^ https://kaminscypodlogi.pl%{REQUEST_URI} [L,R=301]
+
+# ---------------------------------------------------------------------------
+# 2) index.html -> /  (działa też dla /folder/index.html -> /folder/)
+# ---------------------------------------------------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
+
+# ---------------------------------------------------------------------------
+# 3) CACHE (7 dni)
+# ---------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML krótko (żeby zmiany treści szybko wchodziły)
+  ExpiresByType text/html "access plus 10 minutes"
+
+  # CSS / JS — 7 dni
+  ExpiresByType text/css "access plus 2 days"
+  ExpiresByType application/javascript "access plus 2 days"
+  ExpiresByType text/javascript "access plus 2 days"
+
+  # Obrazy — 7 dni
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/png  "access plus 7 days"
+  ExpiresByType image/webp "access plus 2 days"
+  ExpiresByType image/gif  "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType image/x-icon  "access plus 7 days"
+
+  # Fonty — dłużej
+  ExpiresByType font/woff2 "access plus 180 days"
+  ExpiresByType font/woff  "access plus 180 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # HTML — bez agresywnego cache
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # CSS / JS — 7 dni
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=172800"
+  </FilesMatch>
+
+  # Obrazy — 7 dni
+  <FilesMatch "\.(jpg|jpeg|png|webp|gif|svg|ico)$">
+    Header set Cache-Control "public, max-age=172800"
+  </FilesMatch>
+
+  # Fonty — długo
+  <FilesMatch "\.(woff|woff2)$">
+    Header set Cache-Control "public, max-age=15552000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 4) Kompresja GZIP
+# ---------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/css text/xml
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 5) Podstawowe nagłówki bezpieczeństwa
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# HSTS — włącz dopiero gdy masz pewność, że HTTPS działa zawsze
+# <IfModule mod_headers.c>
+#   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+# </IfModule>
+
+###############################################################################
+# KONIEC
+###############################################################################

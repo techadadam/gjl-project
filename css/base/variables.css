@@ -1,0 +1,38 @@
+/* MOTYW DOMYSLNY */
+:root {
+  --color-base-dark: #0d0d0d; /*CARBON BLACK*/
+  --color-base-light: #ffffff; /*PURE WHITE*/
+  --color-accent1: #bfc3c7; /*PLATINUM SILVER*/
+  --color-accent2: #666768; /*STEEL GREY*/
+  --color-accent3: #737475;
+
+  --color-additional1: #737475; /*GREY*/
+
+  --color-background1: rgba(255, 255, 255, 0.97); /* sticky nav color*/
+  --color-shadow1: rgba(0, 0, 0, 0.03);
+
+  --font-main: "Roboto Condensed", sans-serif;
+
+  --radius: 16px;
+  --transition: 0.3s ease;
+
+  /* Hero: */
+  --max: 1200px;
+  --pad: clamp(16px, 3vw, 56px);
+}
+
+/* dodawanie przezroczystosci np w tle przycisku:
+background-color: rgb(from var(--color-accent2) r g b / 0.7);
+background-color: color-mix(in srgb, var(--color-accent2) 35%, transparent);
+*/
+
+/* rozjasnianie koloru:
+background-color: color-mix(in srgb, var(--color-accent1) 80%, white 20%);
+
+*/
+
+/* MOTYW ALTERNATYWNY po dodaniu stylu style="dark" w body */
+.dark {
+  --color-background: #000;
+  --color-text: #fff;
+}

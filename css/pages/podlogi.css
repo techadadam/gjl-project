@@ -1,0 +1,119 @@
+.rodzaje-podlog {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.rodzaje-podlog-button {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  font-family: inherit;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--color-base-light);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.rodzaje-podlog-button img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8); /* przyciemnienie */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.paragraph-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-accent1) aaa;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.paragraph-heading:not(:first-of-type) {
+  margin-top: 9.6rem;
+}
+
+.rodzaje-podlog-button p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.rodzaje-podlog-button:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.rodzaje-podlog:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.rodzaje-podlog-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.rodzaje-podlog-title {
+  font-size: 3.2rem;
+  color: var(--color-base-light);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.rodzaje-podlog-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rodzaje-podlog-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.rodzaje-podlog-img {
+  width: 100%;
+}
+
+.photo-rodzaje-podlog {
+  overflow: hidden;
+  align-items: center;
+  max-width: 525px;
+}
+
+.photo-rodzaje-podlog img {
+  display: block;
+  width: 100%;
+  max-height: 700px;
+  transition: all 0.4s;
+}
+
+.photo-rodzaje-podlog img:hover {
+  transform: scale(1.1);
+}
+
+.rodzaje-podlog-background-img {
+  background: url("../img/podlogi/podloga-drewniana-po-montazu.webp")
+    center/cover no-repeat;
+}

@@ -1,0 +1,208 @@
+/*buttons*/
+/*    RESPONSIVE    */
+
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 4.2rem;
+  }
+}
+
+/*cta*/
+/* Ponizej 544px (telefon) */
+@media (max-width: 34em) {
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+
+/*hero*/
+
+/* ----- RESPONSIVE ----- */
+
+/* Ponizej 1344px (Mniejsze monitory pc) */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-title {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    /*padding: 0 8rem;*/
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+    margin: auto;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+  .hero__content h1 {
+    max-width: 22ch;
+  }
+}
+
+/* Poniżej 704px (Male tablety) */
+
+@media (max-width: 44em) {
+  .hero-img {
+    height: 350px;
+  }
+}
+
+/* --- TELEFON <544px --- */
+@media (max-width: 34em) {
+  .hero__content {
+    justify-content: center;
+  }
+}
+
+/*proces zakupowy*/
+/* RESPONSIVE */
+
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .list-pointbox {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .number-text {
+    text-align: center;
+  }
+
+  .list-pointbox-text {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+/*scrollingGalery*/
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .logos img {
+    height: 3.2rem;
+  }
+}
+
+/*wizytowka*/
+
+/* RESPONSIVE */
+/* Ponizej 1200px (Szerokok. tablety) */
+
+@media (max-width: 75em) {
+  .wizytowka-button-grid {
+    column-gap: 1.2rem;
+  }
+
+  .img-profile-photo {
+    max-width: 150px;
+    margin-left: auto;
+  }
+}
+
+/* Ponizej 944px (Tablety) */
+@media (max-width: 59em) {
+  .nasi-doradcy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wizytowka-button-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wizytowka-button {
+    width: 65%;
+    margin: 0 auto 0 auto;
+  }
+
+  .img-profile-photo {
+    max-width: 120px;
+    margin-left: auto;
+  }
+
+  .wizytowka-text {
+    font-size: 2.8rem;
+  }
+
+  .wizytowka-text p:not(:first-child) {
+    font-size: 2.2rem;
+  }
+}
+
+/* Poniżej 704px (Male tablety) */
+@media (max-width: 44em) {
+  .wizytowka-text {
+    font-size: 2.2rem;
+  }
+
+  .wizytowka-text p:not(:first-child) {
+    font-size: 1.6rem;
+  }
+}
+
+/* Ponizej 544px (telefon) */
+@media (max-width: 34em) {
+  .img-profile-photo {
+    margin: auto;
+  }
+
+  .wizytowka-button-grid {
+    /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+    column-gap: 2.4rem;
+    row-gap: 1.2rem;
+  }
+
+  .wizytowka-button {
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+}

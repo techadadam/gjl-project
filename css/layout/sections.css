@@ -1,0 +1,163 @@
+/* ----- Sekcja Hero ----- */
+
+.section-hero {
+  background-color: var(--color-base-dark);
+  /*
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  */
+  transform: translateY(-9.6rem);
+}
+
+/* ----- Sekcja nasi producenci ----- */
+.section-czym-sie-zajmujemy {
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+/* ----- Sekcja Asortyment ----- */
+.section-asortyment {
+  padding: 9.6rem 0;
+}
+
+/* ----- Sekcja O nas ----- */
+.section-o-nas {
+  background-color: var(--color-base-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 0 5rem 0;
+}
+
+/* ----- Sekcja co nas wyroznia -----*/
+
+.section-co-nas-wyroznia {
+  padding: 14.4rem 0 0 0;
+}
+
+.feature-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: var(--color-base-dark);
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--color-base-dark);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.cnw-feature-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  filter: grayscale(100%);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-title-1stline {
+  font-size: 2.4rem;
+  color: var(--color-base-dark);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* ----- Sekcja godziny otwarcia ----- */
+.section-godziny-otwarcia {
+  padding: 4.8rem 0 4.8rem;
+}
+
+/* ----- sekcja kontakt (CTA) ----- */
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+/* sekcja mapa */
+
+.section-map {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.map-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.map-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.section-nasi-producenci {
+  padding: 9.6rem 0 14.4rem 0;
+}
+
+.section-faq {
+  padding: 14.4rem 0 9.6rem 0;
+}
+
+.section-white {
+  background-color: var(--color-base-light);
+}
+
+.section-black {
+  background-color: var(--color-base-dark);
+}
+
+.section-transparent {
+  background-color: rgba(10, 10, 10, 0.7);
+}
+
+.section-rodzaje-podlog {
+  padding: 9.6rem 0;
+}
+
+.section-proces-zakupowy {
+  padding: 9.6rem 3.2rem;
+  background-color: var(--color-base-light);
+}
+
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /*
+  background: url("../img/podlogi/podloga-drewniana-po-montazu.webp")
+    center/cover no-repeat;
+  */
+  z-index: -1;
+}
+
+.background-black {
+  background-color: var(--color-base-dark);
+  color: var(--color-base-light);
+}
+
+.background-gold {
+  background-color: var(--color-base-light);
+}
+
+.background-white {
+  background-color: var(--color-base-light);
+}

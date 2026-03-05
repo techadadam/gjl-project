@@ -1,0 +1,73 @@
+.proces-zakupowy-number-col {
+  font-size: 18rem;
+}
+
+.proces-zakupowy-description-col {
+  font-size: 3.6rem;
+}
+
+.list-pointbox {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-color: var(--color-base-light);
+  overflow: hidden;
+}
+
+.list-pointbox-number {
+  padding: 0 4.8rem 1.8rem 4.8rem;
+  color: var(--color-accent1);
+}
+
+.number-text {
+  font-size: 12rem;
+  line-height: 1.2;
+}
+
+.list-pointbox-text {
+  padding: 3.2rem;
+  color: var(--color-accent1);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.text-color-gold {
+  color: var(--color-accent2);
+}
+
+.non-marker {
+  list-style: none;
+}
+
+.list-pointoflist {
+  margin-bottom: 2.8rem;
+}
+
+.background-white .list-pointbox-text,
+.background-white .list-pointbox-number {
+  color: color-mix(in srgb, var(--color-accent3) 90%, black 10%);
+}
+
+.list-pointbox-text a {
+  color: var(--color-accent2);
+}
+
+.closer-to-left {
+  transform: translateX(2%);
+  transition: all 0.3s ease-in;
+  /*display: flex;*/
+}
+
+.closer-to-right {
+  transform: translateX(-2%);
+  transition: all 0.3s ease-in;
+  /*display: flex;*/
+}
+
+/*kontakt*/
+.gold-border-button {
+  border: 2px;
+  border-style: solid;
+  border-color: var(--color-accent1);
+}
