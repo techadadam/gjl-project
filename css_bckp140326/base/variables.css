@@ -2,9 +2,9 @@
 :root {
   --color-base-dark: #0d0d0d; /*CARBON BLACK*/
   --color-base-light: #ffffff; /*PURE WHITE*/
-  --color-accent1: rgb(1, 42, 158); /*GRANAT*/
-  --color-accent2: rgb(248, 0, 25); /*CZERWONY*/
-  --color-accent3: rgb(257, 238, 5); /*ZOLTY*/
+  --color-accent1: #bfc3c7; /*PLATINUM SILVER*/
+  --color-accent2: #666768; /*STEEL GREY*/
+  --color-accent3: #737475;
 
   --color-additional1: #737475; /*GREY*/
 

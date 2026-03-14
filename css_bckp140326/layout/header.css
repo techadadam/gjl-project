@@ -1,0 +1,190 @@
+/* ----- Header ----- */
+
+.header {
+  align-items: center;
+  background-color: rgb(from var(--color-base-dark) r g b / 0);
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  background: rgba(0, 0, 0, 0); /* półprzezroczysty */
+
+  width: 100%;
+  z-index: 10;
+  padding: 0 40px;
+}
+
+body.sticky .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body.sticky .logo-container {
+  width: auto;
+}
+
+body:not(.sticky) .logo-container {
+  width: 100%;
+}
+
+body.sticky .main-nav-container {
+  /*width: auto;*/
+  display: flex;
+  justify-content: center;
+}
+
+body:not(.sticky) .main-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-height: 11rem;
+  padding: 1.2rem;
+}
+
+.logo-erkado {
+  height: 5.4rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.brand-connector {
+  display: inline;
+  height: 3.2rem;
+  font-size: 6.4rem;
+  width: auto;
+  color: var(--color-base-light);
+  padding: 0;
+  outline: none;
+}
+
+/*z powodu niebieskich linii za a:*/
+a {
+  color: rgba(0, 0, 0, 0);
+}
+
+.smaller-logo {
+  height: 5.4rem;
+}
+
+.dark-logo {
+  filter: invert(100%);
+}
+
+/* ----- Nawig ----- */
+/*  Inny styl dla .sticky, inny dla not(.sticky), ale jest czesc wspolna  */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-accent1);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
+  border-color: var(--color-accent2);
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+body:not(.sticky) .main-nav-link:link,
+body:not(.sticky) .main-nav-link:visited {
+  color: var(--color-accent1);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
+  border-color: var(--color-accent2);
+}
+
+body:not(.sticky) .main-nav-link:hover,
+body:not(.sticky) .main-nav-link:active {
+  color: var(--color-base-light);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1rem 2.4rem;
+  border-radius: 9px;
+  border-style: solid;
+}
+
+header.nav-open .main-nav-link:link,
+header.nav-open .main-nav-link:visited,
+body.sticky .main-nav-link:link,
+body.sticky .main-nav-link:visited {
+  color: var(--color-base-dark);
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+  border-color: var(--color-accent2);
+}
+
+header.nav-open .main-nav-link:hover,
+header.nav-open .main-nav-link:active,
+body.sticky .main-nav-link:hover,
+body.sticky .main-nav-link:active {
+  color: var(--color-accent1);
+}
+
+header.nav-open .main-nav-link.nav-cta:link,
+header.nav-open .main-nav-link.nav-cta:visited,
+body.sticky .main-nav-link.nav-cta:link,
+body.sticky .main-nav-link.nav-cta:visited {
+  background-color: var(--color-accent2);
+  color: var(--color-base-light);
+}
+
+header.nav-open .main-nav-link.nav-cta:hover,
+header.nav-open .main-nav-link.nav-cta:active,
+body.sticky .main-nav-link.nav-cta:hover,
+body.sticky .main-nav-link.nav-cta:active {
+  background-color: var(--color-base-light);
+  color: var(--color-accent2);
+}
+
+/* ----- Mobilna naw ----- */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--color-accent2);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ----- Przyklejona naw ----- */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--color-background1);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem var(--color-shadow1);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}

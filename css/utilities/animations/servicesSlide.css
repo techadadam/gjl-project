@@ -1,0 +1,84 @@
+.slide {
+  opacity: 0;
+  animation-duration: 7s;
+  will-change: opacity, transform;
+}
+
+.slide--slow {
+  animation-duration: 10s;
+}
+
+.slide--fast {
+  animation-duration: 5s;
+}
+
+.slide.slide--active.slide--left {
+  opacity: 1;
+  animation-name: przesun-w-lewo;
+  animation-timing-function: linear;
+}
+
+.slide.slide--active.slide--right {
+  opacity: 1;
+  animation-name: przesun-w-prawo;
+  animation-timing-function: linear;
+}
+
+.services__container:hover .slide {
+  animation-play-state: paused;
+}
+
+@keyframes przesun-w-lewo {
+  from {
+    transform: translateX(90%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes przesun-w-prawo {
+  from {
+    transform: translateX(-90%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* zakomentowane niżej sa klasy ktore ktore dzialaly pierwotnie i nie pozwalaly na pauzowanie animacji hoverem, html i js pasowaly tez do tego */
+/*
+.slide {
+  opacity: 0; 
+  transition:
+  opacity 0.6s ease, transform 10s ease;
+  will-change: opacity, transform;
+}
+
+.slide.slide--active {
+  opacity: 1;
+  animation: przesun-w-lewo linear;
+  animation-duration: 1s;
+}
+
+.slide-fast {
+  transition: transform 5s ease;
+}
+
+.slide-slow {
+  transition: transform 20s ease;
+}
+
+.slide--right {
+  transform: translateX(90%);
+}
+
+.slide--left {
+  transform: translateX(-400px);
+}
+
+.slide--left.slide--active,
+.slide--right.slide--active {
+  transform: none;
+}
+*/

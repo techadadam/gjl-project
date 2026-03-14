@@ -1,5 +1,5 @@
-/* Reveal bazowy */
-.reveal {
+/* appear bazowy */
+.appear {
   opacity: 0;
   transform: translateY(24px);
   transition:
@@ -8,24 +8,24 @@
   will-change: opacity, transform;
 }
 
-.reveal.reveal--active {
+.appear.appear--active {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* warianty kierunku (opcjonalnie) */
-.reveal--left {
+.appear--left {
   transform: translateX(-24px);
 }
-.reveal--right {
+.appear--right {
   transform: translateX(24px);
 }
-.reveal--zoom {
+.appear--zoom {
   transform: scale(0.98);
 }
 
-.reveal--left.reveal--active,
-.reveal--right.reveal--active,
-.reveal--zoom.reveal--active {
+.appear--left.appear--active,
+.appear--right.appear--active,
+.appear--zoom.appear--active {
   transform: none;
 }
