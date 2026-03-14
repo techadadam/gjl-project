@@ -9,6 +9,7 @@
   --color-additional1: #737475; /*GREY*/
 
   --color-background1: rgba(255, 255, 255, 0.97); /* sticky nav color*/
+  --color-background-transparentblack: rgba(0, 0, 0, 0.4);
   --color-shadow1: rgba(0, 0, 0, 0.03);
 
   --font-main: "Roboto Condensed", sans-serif;

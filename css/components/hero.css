@@ -7,23 +7,25 @@
   margin: 0 auto;
   border-radius: 16px;
   position: relative;
+  display: flex;
+  justify-content: right;
 }
 .hero__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 55, 255, 0.5) 0%,
-    rgba(0, 55, 255, 0.4) 30%,
-    rgba(0, 55, 255, 0.25) 50%,
-    rgba(0, 55, 255, 0.1) 100%
+    color-mix(in srgb, var(--color-accent1) 50%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent1) 50%, transparent) 30%,
+    color-mix(in srgb, var(--color-accent1) 50%, transparent) 50%,
+    color-mix(in srgb, var(--color-accent1) 50%, transparent) 100%
   );
   z-index: 1;
 }
 
 .hero__video {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   object-position: right;
   z-index: 0;
@@ -32,27 +34,54 @@
 .hero__content {
   position: absolute;
   left: 6%;
-  top: 50%;
+  top: 10%;
   /*transform: translateY(-50%);*/
 
   display: flex;
   flex-direction: column;
   justify-content: left;
 
-  max-width: 560px;
+  max-width: clamp(250px, 76vw, 400px);
   padding: 20px 22px;
   border-radius: 14px;
+  background-color: var(--color-background-transparentblack);
 
   z-index: 2;
   color: white;
   text-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 
   text-align: left;
-  max-width: 400px;
+}
+
+.hero__content__top-block {
+  padding: 3.2rem 2.4rem 0 2.4rem;
+  border-bottom: solid white 0.2rem;
+  overflow: hidden;
+}
+
+.hero__content__top-block__logo {
+  width: 100%;
+  max-height: 500px;
+}
+
+.hero__content__bottom-block {
+  padding: 3.2rem 2.4rem;
+  overflow: hidden;
+}
+
+.hero__content__bottom-block__hero__title {
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  max-width: 500px;
+  margin-bottom: clamp(1.2rem, 2vw, 2.4rem);
+}
+
+.hero__content__bottom-block__hero__text {
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  max-width: 450px;
 }
 
 @media (max-width: 768px) {
-  .hero__content {
+  .hero__content__bottom-block__hero__content {
     justify-content: center;
     left: 0%;
     top: 50%;
@@ -61,14 +90,4 @@
     padding: 5px 6px;
     width: min(92%, 560px); /* żeby nie wychodziło poza ekran */
   }
-}
-
-.hero__title {
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  max-width: 500px;
-}
-
-.hero__text {
-  font-size: clamp(1rem, 4.5vw, 2rem);
-  max-width: 450px;
 }

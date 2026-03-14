@@ -1,4 +1,58 @@
-/* appear bazowy */
+.appear {
+  opacity: 0;
+  transform: translateY(99.9%);
+  animation-duration: 1s;
+  will-change: opacity, transform;
+}
+
+.appear--slow {
+  animation-duration: 2s;
+}
+
+.appear--fast {
+  animation-duration: 0.3s;
+}
+
+.appear.appear--active.appear--up {
+  opacity: 1;
+  animation-name: przesun-w-gore;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.appear.appear--active.appear--down {
+  opacity: 1;
+  animation-name: przesun-w-dol;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.services__container:hover .appear {
+  animation-play-state: paused;
+}
+
+@keyframes przesun-w-gore {
+  from {
+    transform: translateY(99.9%);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes przesun-w-dol {
+  from {
+    transform: translateY(-99.9%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* appear bazowy - ponizej stara zakomentowana wersja - analogicznie jak servicesSlide*/
+/*
 .appear {
   opacity: 0;
   transform: translateY(24px);
@@ -13,7 +67,6 @@
   transform: translateY(0);
 }
 
-/* warianty kierunku (opcjonalnie) */
 .appear--left {
   transform: translateX(-24px);
 }
@@ -29,3 +82,4 @@
 .appear--zoom.appear--active {
   transform: none;
 }
+*/

@@ -9,7 +9,9 @@
   <body>
     <!-- sekcja "Header" -->
     <header class="header">
-      <p>header</p>
+      <h1>header</h1>
+      <h1>.</h1>
+      <h1>.</h1>
     </header>
 
     <main>
@@ -23,8 +25,21 @@
           <div class="hero__overlay"></div>
 
           <div class="hero__content reveal reveal--zoom">
-            <h1 class="hero__title">GEORASTER</h1>
-            <p class="hero__text">Firma geodezyjna</p>
+            <div class="hero__content__top-block">
+              <img
+                src="/img/logo_georaster_enhcd_CG.webp"
+                class="hero__content__top-block__logo appear appear--up"
+                alt="logo Georaster"
+              />
+            </div>
+            <div class="hero__content__bottom-block">
+              <h1 class="hero__content__bottom-block__hero__title">
+                GEORASTER
+              </h1>
+              <p class="hero__content__bottom-block__hero__text">
+                Jacek Łęgowski
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -65,6 +80,7 @@
       <p>footer</p>
     </footer>
     <script src="js/animations/servicesSlide.js" defer></script>
+    <script src="js/animations/contentAppear.js" defer></script>
     <script src="js/animations/reveal.js" defer></script>
   </body>
 </html>
