@@ -4,7 +4,7 @@
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
-
+/*
 // Mobile navigation
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -80,7 +80,7 @@ const obs = new IntersectionObserver(
   },
 );
 obs.observe(sectionHeroEl);
-
+*/
 // Flexbox gap Sa
 function checkFlexGap() {
   var flex = document.createElement("div");

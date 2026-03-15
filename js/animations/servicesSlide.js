@@ -24,7 +24,7 @@
         slides.forEach((el, index) => {
           setTimeout(() => {
             el.classList.add("slide--active");
-          }, index * 1000); // 150 ms odstępu
+          }, index * 500); // 500 ms odstępu
         });
 
         triggers.forEach((trigger) => observer.unobserve(trigger));

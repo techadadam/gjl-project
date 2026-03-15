@@ -6,11 +6,13 @@
   --color-accent2: rgb(248, 0, 25); /*CZERWONY*/
   --color-accent3: rgb(257, 238, 5); /*ZOLTY*/
 
-  --color-gray1: #a2a2a2; /*GREY*/
+  --color-grey-dark: #333333; /*GREY*/
+  --color-grey-middle: #a2a2a2; /*GREY*/
+  --color-grey-light: #e6e4e4; /*GREY*/
 
   --color-background1: rgba(255, 255, 255, 0.97); /* sticky nav color*/
   --color-background-transparentblack: rgba(0, 0, 0, 0.4);
-  --color-shadow1: rgba(0, 0, 0, 0.03);
+  --color-shadow1: rgba(0, 0, 0, 0.23);
 
   --font-main: "Roboto Condensed", sans-serif;
 

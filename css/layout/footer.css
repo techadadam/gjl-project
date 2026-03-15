@@ -1,8 +1,8 @@
 /* sekcja stopka foot */
 
 .footer {
-  padding: 9.6rem 0;
-  border-top: 1px solid var(--color-accent1);
+  padding: clamp(3.2rem, 15vw, 8.4rem) 0;
+  border-top: 1px solid var(--color-grey-dark);
   background-color: var(--color-base-light);
 }
 
@@ -20,11 +20,26 @@
   margin-bottom: 2.4rem;
 }
 
+.smaller-logo {
+  height: 5.4rem;
+}
+
 .social-media-links {
   list-style: none;
   display: flex;
   gap: 2.4rem;
   margin-bottom: 1.8rem;
+}
+
+/*
+.social-media-links ol,
+.social-media-links ul {
+  padding-left: 0;
+}
+  */
+ol,
+ul {
+  padding-left: 0;
 }
 
 .social-media-icon {
@@ -35,7 +50,7 @@
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: var(--color-accent2);
+  color: var(--color-grey-dark);
   margin-top: auto;
 }
 
@@ -66,16 +81,16 @@
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: var(--color-accent2);
+  color: var(--color-grey-dark);
   transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: var(--color-accent2);
+  color: var(--color-accent1);
 }
 
 .underfooter-copyright {
   font-size: 1.2rem;
-  border-top: 1px solid var(--color-accent1);
+  border-top: 1px solid var(--color-grey-dark);
 }

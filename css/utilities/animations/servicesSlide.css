@@ -24,7 +24,7 @@
   animation-timing-function: linear;
 }
 
-.services__container:hover .slide {
+.services__blocks:hover .slide {
   animation-play-state: paused;
 }
 
@@ -39,7 +39,7 @@
 
 @keyframes przesun-w-prawo {
   from {
-    transform: translateX(-90%);
+    transform: translateX(-99%);
   }
   to {
     transform: translateX(0);

@@ -2,16 +2,69 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <title>Strona &middot; testy</title>
+    <title>GEORASTER &middot; Jacek Łęgowski</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="GEORASTER &middot; Jacek Łęgowski –  
+      Lokalny lider wśród firm geodezyjnych. Usługi geodezyjne dla klientów indywidualnych i firm. Brodnica i okolice."
+    />
+    <link rel="canonical" href="https://techadadam.github.io/gjl-project/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="alternate"
+      href="https://techadadam.github.io/gjl-project/"
+      hreflang="pl-PL"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="GEORASTER &middot; Jacek Łęgowski" />
+    <meta
+      property="og:description"
+      content="Usługi geodezyjne dla klientów indywidualnych i firm. Brodnica i okolice."
+    />
+    <meta
+      property="og:url"
+      content="https://techadadam.github.io/gjl-project/"
+    />
+    <meta
+      property="og:image"
+      content="https://techadadam.github.io/gjl-project/img/logo_georaster_enhcd_CG.webp"
+    />
+    <!-- Bootstrap  CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo_georaster_enhcd_CG.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/script.js"></script>
   </head>
 
   <body>
     <!-- sekcja "Header" -->
     <header class="header">
-      <h1>header</h1>
-      <h1>.</h1>
-      <h1>.</h1>
+      <h1 style="color: white">.</h1>
+      <h1 style="color: white">.</h1>
+      <h1 style="color: white">.</h1>
     </header>
 
     <main>
@@ -40,17 +93,18 @@
                 Jacek Łęgowski
               </h2>
               <p class="hero__content__bottom-block__hero__slogan">
-                Lider wsród lokalnych firm geodezyjnych
+                Lokalny lider wśród firm geodezyjnych
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section__services slide-trigger reveal">
+      <section class="section__services reveal">
         <div class="services__container">
-          <div class="services__overlay"></div>
-          <div class="services__blocks">
+          <h2 class="heading__secondary">Jakie usługi oferujemy?</h2>
+          <div class="services__blocks slide-trigger">
+            <div class="services__overlay"></div>
             <div class="services__blocks__row slide slide--fast slide--left">
               <div class="services__blocks__row__cell">Wytyczenia budynków</div>
               <div class="services__blocks__row__cell">Wznowienia granic</div>
@@ -76,11 +130,100 @@
           </div>
         </div>
       </section>
+
+      <section class="section__map reveal">
+        <div class="map__container">
+          <h2 class="heading__secondary">Gdzie nas znajdziesz?</h2>
+          <div class="map__wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.179074850122!2d19.408057077147078!3d53.2504906818908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471d1f888d0c929f%3A0x52056a5778bc76aa!2sGeoraster%20Jacek%20%C5%81%C4%99gowski!5e0!3m2!1spl!2spl!4v1773596590941!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-      <p>footer</p>
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="smaller-logo dark-logo"
+              alt="Georaster logo"
+              src="img/logo_georaster_enhcd_CG.webp"
+            />
+          </a>
+
+          <ul class="social-media-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-media-icon"
+                  name="logo-instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-media-icon"
+                  name="logo-facebook"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">Georaster</p>
+          <p class="copyright">Jacek Łęgowski</p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Kontakt</p>
+          <address class="contacts">
+            <p class="address">
+              Biuro:<br />
+              <a class="footer-link" href="tel:+48 692 979 123"
+                >+48 692 979 123</a
+              >
+              <br />
+              <a class="footer-link" href="mailto:---">biuro@georaster.pl</a>
+            </p>
+          </address>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Adres</p>
+          <address class="contacts">
+            <p class="address">
+              Jagiellońska <br />
+              87-300 Brodnica
+            </p>
+          </address>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Godziny otwarcia</p>
+          <address class="contacts">
+            <p class="address">
+              Pn. - Pt. 7:30 - 15:30 <br />
+              Sb. - Nd. 9:00 - 13:00
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="underfooter-copyright">
+          Copyright &copy; <span class="year"></span> by AL. All rights
+          reserved.
+        </p>
+      </div>
     </footer>
     <script src="js/animations/servicesSlide.js" defer></script>
     <script src="js/animations/contentAppear.js" defer></script>

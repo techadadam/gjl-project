@@ -5,9 +5,11 @@
 
 /* @import "base/trash.css"; */
 /*
-@import "layout/grids.css";
 @import "layout/header.css";
+*/
+@import "layout/grids.css";
 @import "layout/footer.css";
+/*
 @import "layout/sections.css";
 @import "layout/containers.css";
 
@@ -16,8 +18,8 @@
 @import "components/forms.css";
 */
 @import "components/hero.css";
-/*
 @import "components/maps.css";
+/*
 @import "components/scrollingGallery.css";
 @import "components/video.css";
 @import "components/boxes.css";
@@ -28,17 +30,7 @@
 @import "components/wizytowka.css";
 */
 @import "components/services.css";
-/*
-@import "pages/index.css";
-@import "pages/podlogi.css";
-@import "pages/drzwi.css";
-@import "pages/wykladziny.css";
-@import "pages/akcesoria.css";
-@import "pages/projektanci.css";
 
-@import "utilities/spacing.css";
-@import "utilities/helpers.css";
-*/
 @import "utilities/animations/reveal.css";
 @import "utilities/animations/servicesSlide.css";
 @import "utilities/animations/contentAppear.css";
@@ -46,7 +38,9 @@
 /*QUERIES ASSOCIATED WITH CSS FILES FOLDERS*/
 /*
 @import "base/base_queries.css";
+*/
 @import "layout/layout_queries.css";
+/*
 @import "components/components_queries.css";
 @import "pages/pages_queries.css";
 */
