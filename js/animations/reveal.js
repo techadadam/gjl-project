@@ -26,7 +26,7 @@
         }
       });
     },
-    { threshold: 0.3 },
+    { threshold: 0.01 },
   );
 
   elements.forEach((el) => observer.observe(el));
