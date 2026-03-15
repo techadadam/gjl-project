@@ -1,6 +1,6 @@
 .appear {
   opacity: 0;
-  transform: translateY(99.9%);
+  transform: translateY(99%);
   animation-duration: 1s;
   will-change: opacity, transform;
 }
@@ -35,10 +35,10 @@
 
 @keyframes przesun-w-gore {
   from {
-    transform: translateY(99.9%);
+    transform: translateY(99%);
   }
   to {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
   }
 }
 

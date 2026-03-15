@@ -6,7 +6,7 @@
   --color-accent2: rgb(248, 0, 25); /*CZERWONY*/
   --color-accent3: rgb(257, 238, 5); /*ZOLTY*/
 
-  --color-additional1: #737475; /*GREY*/
+  --color-gray1: #a2a2a2; /*GREY*/
 
   --color-background1: rgba(255, 255, 255, 0.97); /* sticky nav color*/
   --color-background-transparentblack: rgba(0, 0, 0, 0.4);

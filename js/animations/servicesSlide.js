@@ -2,32 +2,36 @@
 // Użycie: dodaj klasę "slide" do elementu w HTML, a na stronie dodaj <script src="slide.js" defer></script>
 
 (() => {
-  // Jeśli na stronie nie ma żadnych elementów do slide, nic nie rób
-  const elements = document.querySelectorAll(".slide");
-  if (!elements.length) return;
+  const slides = document.querySelectorAll(".slide");
+  const triggers = document.querySelectorAll(".slide-trigger");
 
-  // Szanuj ustawienie systemowe "reduce motion"
+  if (!slides.length || !triggers.length) return;
+
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
 
-  // Jeśli użytkownik nie chce animacji, po prostu pokaż elementy
   if (prefersReducedMotion) {
-    elements.forEach((el) => el.classList.add("slide--active"));
+    slides.forEach((el) => el.classList.add("slide--active"));
     return;
   }
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("slide--active");
-          observer.unobserve(entry.target); // animuj tylko raz
-        }
+        if (!entry.isIntersecting) return;
+
+        slides.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("slide--active");
+          }, index * 1000); // 150 ms odstępu
+        });
+
+        triggers.forEach((trigger) => observer.unobserve(trigger));
       });
     },
-    { threshold: 0.05 },
+    { threshold: 0.3 },
   );
 
-  elements.forEach((el) => observer.observe(el));
+  triggers.forEach((trigger) => observer.observe(trigger));
 })();
