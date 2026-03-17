@@ -60,7 +60,7 @@
       });
     },
     {
-      threshold: 0.01,
+      threshold: 0.001,
       rootMargin: "0px 0px -10% 0px",
     },
   );
