@@ -10,6 +10,7 @@
   display: flex;
   justify-content: right;
 }
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -75,6 +76,8 @@
   font-weight: 800;
   max-width: 500px;
   margin-bottom: clamp(0.8rem, 0.75vw, 1.8rem);
+  display: flex;
+  justify-content: center;
 }
 
 .hero__content__bottom-block__hero__subtitle {
@@ -82,29 +85,28 @@
   font-weight: 700;
   max-width: 450px;
   margin-bottom: clamp(1.6rem, 6vw, 6.4rem);
+  display: flex;
+  justify-content: center;
 }
 
 .hero__content__bottom-block__hero__slogan {
   font-size: clamp(1rem, 1.8vw, 1.6rem);
   max-width: 450px;
+  margin-bottom: clamp(1.6rem, 3vw, 3.2rem);
+  display: flex;
+  justify-content: center;
+}
+
+.el-justify {
+  display: flex;
+  justify-content: center;
+}
+
+.el-full-width {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
-  .hero__content__bottom-block__hero__title {
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero__content__bottom-block__hero__subtitle {
-    display: flex;
-    justify-self: center;
-  }
-
-  .hero__content__bottom-block__hero__slogan {
-    display: flex;
-    justify-self: center;
-  }
-
   .hero__content {
     justify-content: center;
     transform: translate(-50%, -50%);

@@ -29,54 +29,6 @@
   padding: 0 0 5rem 0;
 }
 
-/* ----- Sekcja co nas wyroznia -----*/
-
-.section-co-nas-wyroznia {
-  padding: 14.4rem 0 0 0;
-}
-
-.feature-icon {
-  height: 3.2rem;
-  width: 3.2rem;
-  background-color: var(--color-base-dark);
-  margin-bottom: 3.2rem;
-  padding: 1.6rem;
-  border-radius: 50%;
-}
-
-.feature-title {
-  font-size: 2.4rem;
-  color: var(--color-base-dark);
-  font-weight: 700;
-  margin-bottom: 1.6rem;
-}
-
-.feature-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.cnw-feature-img {
-  width: 6.4rem;
-  border-radius: 50%;
-  margin-bottom: 1.2rem;
-  filter: grayscale(100%);
-}
-
-.feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature-title-1stline {
-  font-size: 2.4rem;
-  color: var(--color-base-dark);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
 /* ----- Sekcja godziny otwarcia ----- */
 .section-godziny-otwarcia {
   padding: 4.8rem 0 4.8rem;

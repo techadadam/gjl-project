@@ -1,9 +1,8 @@
-/*
 @import "base/reset.css";
 @import "base/variables.css";
 @import "base/typography.css";
 @import "base/base.css";
-*/
+
 /* @import "base/trash.css"; */
 /*
 @import "layout/grids.css";
@@ -41,9 +40,10 @@
 @import "utilities/animations/reveal.css";
 
 /*QUERIES ASSOCIATED WITH CSS FILES FOLDERS*/
-/*
+
 @import "base/base_queries.css";
 @import "layout/layout_queries.css";
+/*
 @import "components/components_queries.css";
 @import "pages/pages_queries.css";
 */

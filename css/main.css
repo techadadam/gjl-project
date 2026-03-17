@@ -2,8 +2,8 @@
 @import "base/variables.css";
 @import "base/typography.css";
 @import "base/base.css";
-
 /* @import "base/trash.css"; */
+
 /*
 @import "layout/header.css";
 */
@@ -12,13 +12,13 @@
 /*
 @import "layout/sections.css";
 @import "layout/containers.css";
-
-@import "components/buttons.css";
 @import "components/cards.css";
 @import "components/forms.css";
 */
+@import "components/buttons.css";
 @import "components/hero.css";
 @import "components/maps.css";
+@import "components/features.css";
 /*
 @import "components/scrollingGallery.css";
 @import "components/video.css";
@@ -36,9 +36,7 @@
 @import "utilities/animations/contentAppear.css";
 
 /*QUERIES ASSOCIATED WITH CSS FILES FOLDERS*/
-/*
 @import "base/base_queries.css";
-*/
 @import "layout/layout_queries.css";
 /*
 @import "components/components_queries.css";

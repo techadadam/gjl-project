@@ -1,0 +1,173 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  padding: 1.2rem 4.8rem;
+  border-radius: 9px;
+
+  /* dla btn: */
+  border: solid;
+  border-color: var(--color-accent2);
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: var(--color-base-light);
+  background-color: rgb(from var(--color-accent2) r g b / 0.7);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-base-light);
+  color: var(--color-accent2);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: var(--color-base-dark);
+  color: var(--color-accent3);
+  border-style: solid;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--color-accent3);
+  color: var(--color-base-dark);
+  border-style: solid;
+}
+
+.btn--form {
+  background-color: var(--color-accent3);
+  color: var(--color-base-dark);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: var(--color-base-dark);
+  color: var(--color-accent2);
+}
+
+/* ----- Asortyment Button ----- */
+
+.asortyment {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.asortyment-button {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  font-family: inherit;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--color-base-light);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.asortyment-button img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); /* przyciemnienie */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.asortyment-button p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.asortyment-button:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.asortyment:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.asortyment-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.asortyment-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-base-dark);
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.asortyment-title {
+  font-size: 3.2rem;
+  color: var(--color-base-light);
+  font-weight: 600;
+}
+
+.asortyment-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.asortyment-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.asortyment-img {
+  width: 100%;
+}
+
+/* Przycisk zamknięcia mobile nav */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: var(--color-base-light);
+  cursor: pointer;
+  user-select: none;
+}
